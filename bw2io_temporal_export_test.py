@@ -18,9 +18,6 @@ Date: 2023-05-03
 7. deletes the database and imports the database from excel (this works)
 8. converts the three strings back into their original form as a temporal distribution, deletes the strings from the exchange dictionary
 
-"""
-
-"""
 ### Problem
 When temporal distributions are added to exchanges, the database cannot be exported to excel/csv.
 This is because the temporal distributions are stored as numpy arrays.
@@ -36,9 +33,6 @@ Converts the strings back into their original form as TD objects (using np.froms
 * Add the two new functions to bw2io.strategies
 * Call TD_to_string() in bw2io.export.csv.CSVFormatter.get_formatted_data
 * Call string_to_TD() in bw2io.importers.excel.ExcelImporter
-
-
-
 """
 #%%
 import bw2data as bd
